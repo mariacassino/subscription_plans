@@ -1,6 +1,6 @@
 class CompaniesController < ApplicationController
 
-    def update_subscription_plan
+    def update
         @company = Company.find(params[:id])
         if @company.update(company_params)
             redirect_to "/", notice: "Successfully updated subscription plan!"

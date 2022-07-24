@@ -6,5 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-subscription_plan = SubscriptionPlan.where(name: "business").first_or_create
-company = Company.where(subscription_plan: subscription_plan.id).first_or_create
+SubscriptionPlan.delete_all
+Company.delete_all
+
+free_subscription_plan = SubscriptionPlan.where(name: "free", price: "Free").first_or_create
+business_subscription_plan = SubscriptionPlan.where(name: "business", price: "$249").first_or_create
+enterprise_subscription_plan = SubscriptionPlan.where(name: "enterprise", price: "$2499").first_or_create
+
+company = Company.where(subscription_plan: free_subscription_plan.id).first_or_create
