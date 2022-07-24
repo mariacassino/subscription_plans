@@ -1,6 +1,6 @@
 class SubscriptionPlansController < ApplicationController
     def index
-        # @subscription_plans = SubscriptionPlan.all
-        @subscription_plans = ["Free", "Business", "Enterprise"]
+        @company = Company.first
+        @subscription_plans = SubscriptionPlan.all
     end
 end
