@@ -1,10 +1,7 @@
 <div class="subscription_container">
-    <%# <% byebug %> 
-    <%# <%= button_to [:create_subscription_plan_path, @company] do %>
-        <%# Get Started
-    <% end %> 
 
-    <%= button_to "Get Started", create_subscription_plan_path(@company.id), method: :create %>
+    <%= button_to "Get Started", update_subscription_plan_path(@company.id, company: {subscription_plan_id: 1})%>
+
 </div>
 
 
