@@ -3,7 +3,7 @@
         <div class="col">
             <%= "Subscription Plans and Pricing" %>
         </div>
-        <div class="col text-center">
+        <div class="col">
             <%= "Free Tier" %>
             <%= SubscriptionPlan.find_by(name: "free").price %>
             <%= "Usage restrictions will apply until your account is funded with at least $5" %>
@@ -51,95 +51,194 @@
     </div>
     <div class="row">
         <div class="col">
+            <%= "Billing" %>
         </div>
         <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
+            <%= "Credit card billed automatically at the end of the month" %>
         </div>
         <div class="col">
+            <%= "Credit card billed automatically at the end of the month" %>
+        </div>
     </div>
     <div class="row">
         <div class="col">
+            <%= "1 Year Price Lock (From Start Time)" %>
         </div>
         <div class="col">
+            <%= "No" %>
         </div>
         <div class="col">
+            <%= "Yes" %>
         </div>
         <div class="col">
+            <%= "Yes" %>
+        </div>
     </div>
     <div class="row">
         <div class="col">
+            <%= "Billing Data Export" %>
         </div>
         <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
+            <%= "API, From UI (CSV, PDF)" %>
         </div>
         <div class="col">
+            <%= "API, From UI (CSV, PDF)" %>
+        </div>
     </div>
     <div class="row">
         <div class="col">
+            <%= "Automated Monthly Invoices Broken Down By Projects" %>
         </div>
         <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
+            <%= "API, From UI (CSV, PDF)" %>
         </div>
         <div class="col">
+            <%= "API, From UI (CSV, PDF)" %>
+        </div>
     </div>
     <div class="row">
         <div class="col">
+            <%= "Subprojects" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
         </div>
-        <div class="col">
-        </div>
-        <div class="col">
     </div>
     <div class="row">
         <div class="col">
+            <%= "HIPAA BAA (*)" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
         </div>
-        <div class="col">
-        </div>
-        <div class="col">
     </div>
     <div class="row">
         <div class="col">
+            <%= "Free (Included) Media Storage" %>
         </div>
         <div class="col">
+            <%= "5 GB" %>
         </div>
         <div class="col">
+            <%= "200 GB" %>
         </div>
         <div class="col">
+            <%= "500 GB" %>
+        </div>
     </div>
     <div class="row">
         <div class="col">
+            <%= "RTMP Out" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
         </div>
-        <div class="col">
-        </div>
-        <div class="col">
     </div>
     <div class="row">
         <div class="col">
+            <%= "Reseller Tax Agreement (*)" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
         </div>
         <div class="col">
         </div>
-        <div class="col">
-        </div>
-        <div class="col">
     </div>
     <div class="row">
         <div class="col">
+            <%= "Call Throughput (Space Level)" %>
         </div>
         <div class="col">
+            <%= "1 call / second" %>
         </div>
         <div class="col">
+            <%= "5 calls / second" %>
         </div>
         <div class="col">
+            <%= "50 calls / second" %>
+        </div>
     </div>
+</div>
 
+<div class="container-lg text-center addons-container">
+    <div class="row">
+        <div class="col">
+            <%= "Add-Ons" %>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+    </div>
+     <div class="row">
+        <div class="col">
+            <%= "Dedicated IP For BYOC (*)" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "$500/month for redundant IPs" %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <%= "Additional Incremental CPS (SIP or PSTN)" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "-" %>
+        </div>
+        <div class="col">
+            <%= "Max 250 CPS - Contact Sales" %>
+        </div>
+    </div>
+</div>
+
+<div class="container faq-container">
+    <div class="row">
+        <%= "FAQ" %>
+    </div>
+    <div class="row">
+        <%= "How does the one year price lock work?" %>
+    </div>
+    <div class="row">
+        <%= "How does high throughput calling work as part of the bundles?" %>
+    </div>
 </div>
 
 
