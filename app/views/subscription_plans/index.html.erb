@@ -1,7 +1,146 @@
-<div class="subscription_container">
-
-    <%= button_to "Get Started", update_subscription_plan_path(@company.id, company: {subscription_plan_id: 1})%>
+<div class="container-lg text-center subscription-container">
+    <div class="row">
+        <div class="col">
+            <%= "Subscription Plans and Pricing" %>
+        </div>
+        <div class="col text-center">
+            <%= "Free Tier" %>
+            <%= SubscriptionPlan.find_by(name: "free").price %>
+            <%= "Usage restrictions will apply until your account is funded with at least $5" %>
+        </div>
+        <div class="col">
+            <%= "Business" %>
+            <%= SubscriptionPlan.find_by(name: "business").price %>
+            <%= "Monthly" %>
+            <%= "Current Plan - Trial 45 days left" %>
+        </div>
+        <div class="col">
+            <%= "Enterprise" %>
+            <%= SubscriptionPlan.find_by(name: "enterprise").price %>
+            <%= "Monthly (Minimum of 3 months if using (*) features)" %>
+            <%= button_to "Get Started", update_subscription_plan_path(@company.id, company: {subscription_plan_id: 1})%>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <%= "Reporting Data Storage" %>
+        </div>
+        <div class="col">
+            <%= "7 Days" %>
+        </div>
+        <div class="col">
+            <%= "60 Days" %>
+        </div>
+        <div class="col">
+            <%= "1 Year" %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <%= "# Of Administrators" %>
+        </div>
+        <div class="col">
+            <%= "1" %>
+        </div>
+        <div class="col">
+            <%= "10" %>
+        </div>
+        <div class="col">
+            <%= "Unlimited" %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+    </div>
 
 </div>
+
 
 
