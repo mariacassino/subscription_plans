@@ -6,3 +6,151 @@ body {
     background-color: #ececec;
 }
 
+.option-box {
+    margin-right: 4px;
+    // margin-bottom: 1px;
+    margin-left: 4px; 
+    height: auto;
+    min-height: 75px;
+    // max-height: 100vh;
+    overflow-wrap: break-word;
+    // text-align: center;
+    width: 23%;
+    font-weight: 400;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features-box {
+    margin-bottom: 1px;
+    height: auto;
+    min-height: 75px;
+    overflow-wrap: break-word;
+    width: 23%;
+    text-align: start;
+    font-weight: 600;
+    line-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tier-name {
+    min-height:300px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-top: 1px solid #e0e0e0;
+}
+
+.tier-name i.fa-solid {
+    margin-top: 10%;
+}
+
+.tier-name span {
+    &.current-plan-time-remaining {
+        margin-top: 23%;
+    };
+    
+    &.price {
+        font-weight: 600;
+    }
+}
+
+
+.business {
+    border-left: solid 2px #FFAC1C;
+    border-right: solid 2px #FFAC1C;
+
+    &.last {
+        border-bottom: solid 2px #FFAC1C;
+    }
+}
+
+
+.subscription-container {
+    margin-top: 30px;
+}
+
+.subscription-container .button_to input {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 11%;
+}
+
+@media screen and (max-width: 600px) {
+    .subscription-container .button_to input {
+        font-size: 5px;
+    }
+}
+
+
+
+
+
+// .features-col {
+//     margin-right: 4px;
+//     // margin-bottom: 1px;
+//     margin-left: 4px; 
+//     // height: auto;
+//     // min-height: 75px;
+//     // overflow-wrap: break-word;
+//     width: 23%;
+// }
+
+// .free-col {
+//     margin-right: 4px;
+//     // margin-bottom: 1px;
+//     margin-left: 4px; 
+//     // height: auto;
+//     // min-height: 75px;
+//     // max-height: 100vh;
+//     // overflow-wrap: break-word;
+//     // text-align: center;
+//     width: 23%;
+// }
+
+// .business-col {
+//     margin-right: 4px;
+//     // margin-bottom: 1px;
+//     margin-left: 4px; 
+//     // height: auto;
+//     // min-height: 75px;
+//     // max-height: 100vh;
+//     // overflow-wrap: break-word;
+//     // text-align: center;
+//     width: 23%;
+// }
+
+// .enterprise-col {
+//     margin-right: 4px;
+//     // margin-bottom: 1px;
+//     margin-left: 4px; 
+//     // height: auto;
+//     // min-height: 75px;
+//     // max-height: 100vh;
+//     // overflow-wrap: break-word;
+//     // text-align: center;
+//     width: 23%;
+// }
+
+// .table-row {
+//     margin-bottom: 1px;
+//     height: auto;
+//     min-height: 75px;
+// }
+
+

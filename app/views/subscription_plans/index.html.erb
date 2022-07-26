@@ -1,187 +1,204 @@
+<%# change to col-sm-3 to make responsive? %>
+<%# try col-xs-1 col-sm-3 to move features box above others %>
+
 <div class="container-lg text-center subscription-container">
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Subscription Plans and Pricing" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box tier-name free">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <br>
             <%= "Free Tier" %>
-            <%= SubscriptionPlan.find_by(name: "free").price %>
+            <br>
+            <span class="price"><%= SubscriptionPlan.find_by(name: "free").price %></span>
+            <br>
             <%= "Usage restrictions will apply until your account is funded with at least $5" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box tier-name business">
+            <i class="fa-solid fa-users fa-2x"></i>
+            <br>
             <%= "Business" %>
-            <%= SubscriptionPlan.find_by(name: "business").price %>
+            <br>
+            <span class="price"><%= SubscriptionPlan.find_by(name: "business").price %></span>
+            <br>
             <%= "Monthly" %>
-            <%= "Current Plan - Trial 45 days left" %>
+            <br>
+            <span class="current-plan-time-remaining"><%= "Current Plan - Trial 45 days left" %></span>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box tier-name enterprise">
+            <i class="fa-solid fa-building fa-2x"></i>
+            <br>
             <%= "Enterprise" %>
-            <%= SubscriptionPlan.find_by(name: "enterprise").price %>
+            <br>
+            <span><%= SubscriptionPlan.find_by(name: "enterprise").price %></span>
+            <br>
             <%= "Monthly (Minimum of 3 months if using (*) features)" %>
+            <br>
             <%= button_to "Get Started", update_subscription_plan_path(@company.id, company: {subscription_plan_id: 1})%>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Reporting Data Storage" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "7 Days" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "60 Days" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "1 Year" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "# Of Administrators" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "1" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "10" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "Unlimited" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Billing" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "Credit card billed automatically at the end of the month" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "Credit card billed automatically at the end of the month" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "1 Year Price Lock (From Start Time)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "No" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "Yes" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "Yes" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Billing Data Export" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "API, From UI (CSV, PDF)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "API, From UI (CSV, PDF)" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Automated Monthly Invoices Broken Down By Projects" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "API, From UI (CSV, PDF)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "API, From UI (CSV, PDF)" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Subprojects" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "HIPAA BAA (*)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Free (Included) Media Storage" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "5 GB" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "200 GB" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
             <%= "500 GB" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "RTMP Out" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Reseller Tax Agreement (*)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise">
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Call Throughput (Space Level)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box free last">
             <%= "1 call / second" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box business last">
             <%= "5 calls / second" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box enterprise last">
             <%= "50 calls / second" %>
         </div>
     </div>
@@ -189,7 +206,7 @@
 
 <div class="container-lg text-center addons-container">
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Add-Ons" %>
         </div>
         <div class="col">
@@ -200,30 +217,30 @@
         </div>
     </div>
      <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Dedicated IP For BYOC (*)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box">
             <%= "$500/month for redundant IPs" %>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-3 features-box">
             <%= "Additional Incremental CPS (SIP or PSTN)" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box">
             <%= "-" %>
         </div>
-        <div class="col bg-white">
+        <div class="col-3 bg-white option-box">
             <%= "Max 250 CPS - Contact Sales" %>
         </div>
     </div>
@@ -240,6 +257,5 @@
         <%= "How does high throughput calling work as part of the bundles?" %>
     </div>
 </div>
-
 
 
