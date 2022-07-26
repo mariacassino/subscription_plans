@@ -3,9 +3,9 @@ class CompaniesController < ApplicationController
     def update
         @company = Company.find(params[:id])
         if @company.update(company_params)
-            redirect_to "/", notice: "Successfully updated subscription plan!"
+            redirect_to "/", :flash => { :success => "Successfully updated subscription plan!" } 
         else
-            redirect_to "/", notice: "Sorry! Something went wrong. Please choose a subscription plan."
+            redirect_to "/", :flash => { :notice => "Sorry! Something went wrong. Please choose a subscription plan." } 
         end
     end
 

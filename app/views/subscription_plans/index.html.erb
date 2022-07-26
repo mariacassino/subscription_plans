@@ -9,18 +9,22 @@
         <div class="col-3 bg-white option-box tier-name free">
             <i class="fa-solid fa-user fa-2x"></i>
             <br>
-            <%= "Free Tier" %>
-            <br>
-            <span class="price"><%= SubscriptionPlan.find_by(name: "free").price %></span>
+                <div class="tier-primary-text">
+                    <%= "Free Tier" %>
+                    <br>
+                    <span class="price"><%= SubscriptionPlan.find_by(name: "free").price %></span>
+                </div>
             <br>
             <%= "Usage restrictions will apply until your account is funded with at least $5" %>
         </div>
         <div class="col-3 bg-white option-box tier-name business">
             <i class="fa-solid fa-users fa-2x"></i>
             <br>
-            <%= "Business" %>
-            <br>
-            <span class="price"><%= SubscriptionPlan.find_by(name: "business").price %></span>
+            <div class="tier-primary-text">
+                <%= "Business" %>
+                <br>
+                <span class="price"><%= SubscriptionPlan.find_by(name: "business").price %></span>
+            </div>
             <br>
             <%= "Monthly" %>
             <br>
@@ -29,9 +33,11 @@
         <div class="col-3 bg-white option-box tier-name enterprise">
             <i class="fa-solid fa-building fa-2x"></i>
             <br>
-            <%= "Enterprise" %>
-            <br>
-            <span><%= SubscriptionPlan.find_by(name: "enterprise").price %></span>
+            <div class="tier-primary-text">
+                <%= "Enterprise" %>
+                <br>
+                <span><%= SubscriptionPlan.find_by(name: "enterprise").price %></span>
+            </div>
             <br>
             <%= "Monthly (Minimum of 3 months if using (*) features)" %>
             <br>

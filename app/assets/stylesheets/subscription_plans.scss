@@ -8,13 +8,10 @@ body {
 
 .option-box {
     margin-right: 4px;
-    // margin-bottom: 1px;
     margin-left: 4px; 
     height: auto;
     min-height: 75px;
-    // max-height: 100vh;
     overflow-wrap: break-word;
-    // text-align: center;
     width: 23%;
     font-weight: 400;
     border-bottom: 1px solid #ececec;
@@ -34,7 +31,6 @@ body {
     text-align: start;
     font-weight: 600;
     line-height: 100%;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -102,7 +98,7 @@ body {
     font-size: 20px;
     width: 100%;
     vertical-align: middle;
-    margin-top: 8%;
+    margin-top: 6%;
     width: 85%;
     line-height: normal;
 }
@@ -121,11 +117,16 @@ body {
 .accordion-button:not(.collapsed) {
     background-color: white;
     color: black;
+    box-shadow: 0px 0px 0px white
 }
 
 .accordion {
     width: 95%;
+    margin-bottom: 5%;
 }
 
+.tier-primary-text {
+    font-size: 20px;
+}
 
 
