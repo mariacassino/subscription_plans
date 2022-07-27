@@ -20,6 +20,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+};
+
+@media screen and (max-width: 600px) {
+    .option-box {
+        font-size: 10px;
+        overflow-wrap: initial;
+    }
 }
 
 .features-box {
@@ -29,11 +36,28 @@ body {
     overflow-wrap: break-word;
     width: 23%;
     text-align: start;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-left: 3%;
+
+    &.sub-plan-pricing {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .features-box {
+        font-size: 10px;
+        overflow-wrap: inherit;
+
+        &.sub-plan-pricing {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
 }
 
 .faq-title-box {
@@ -57,6 +81,7 @@ body {
     flex-direction: column;
     border-top: 1px solid #e0e0e0;
 }
+
 
 .tier-name i.fa-solid {
     margin-top: 10%;
@@ -127,6 +152,18 @@ body {
 
 .tier-primary-text {
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .tier-primary-text {
+        font-size: 14px;
+        overflow-wrap: initial;
+    }
+}
+
+#panelsStayOpen-collapseOne p{
+    display: list-item;
+    margin-left: 3%;
 }
 
 
