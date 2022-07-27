@@ -6,6 +6,66 @@ body {
     background-color: #ececec;
 }
 
+
+/* TABLE */
+
+.subscription-container {
+    margin-top: 30px;
+}
+
+/* tier name boxes */
+.tier-name {
+    min-height:300px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-top: 1px solid #e0e0e0;
+}
+
+.tier-name i.fa-solid {
+    margin-top: 10%;
+}
+
+.tier-name span {
+    &.current-plan-time-remaining {
+        margin-top: 23%;
+    };
+    
+    &.price {
+        font-weight: 600;
+    }
+}
+
+.tier-primary-text {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .tier-primary-text {
+        font-size: 14px;
+        overflow-wrap: initial;
+    }
+}
+
+.popular-box {
+    margin-right: 4px;
+    margin-left: 4px; 
+    height: auto;
+    min-height: 75px;
+    width: 23%;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &.most-popular {
+        background-color: orange;
+        font-weight: 400;
+    }
+}
+
+
+/* option boxes */
 .option-box {
     margin-right: 4px;
     margin-left: 4px; 
@@ -29,6 +89,8 @@ body {
     }
 }
 
+
+/* feature name boxes */
 .features-box {
     margin-bottom: 1px;
     height: auto;
@@ -46,6 +108,10 @@ body {
     &.sub-plan-pricing {
         font-size: 25px;
     }
+
+    &.addon-title-box {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -60,44 +126,12 @@ body {
     }
 }
 
-.faq-title-box {
-    margin-bottom: 1px;
-    height: auto;
-    min-height: 75px;
-    width: 23%;
-    text-align: start;
-    font-weight: 600;
-    line-height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 35px;
-}
-
-.tier-name {
-    min-height:300px;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    border-top: 1px solid #e0e0e0;
+.checkmark {
+    color: #00C78C;
 }
 
 
-.tier-name i.fa-solid {
-    margin-top: 10%;
-}
-
-.tier-name span {
-    &.current-plan-time-remaining {
-        margin-top: 23%;
-    };
-    
-    &.price {
-        font-weight: 600;
-    }
-}
-
-
+/* business tier column */
 .business {
     border-left: solid 2px #FFAC1C;
     border-right: solid 2px #FFAC1C;
@@ -108,8 +142,10 @@ body {
 }
 
 
-.subscription-container {
-    margin-top: 30px;
+/* Get Started button */
+
+.subscription-container .button_to {
+    margin-bottom: 3%;
 }
 
 .subscription-container .button_to input {
@@ -130,8 +166,33 @@ body {
 
 @media screen and (max-width: 600px) {
     .subscription-container .button_to input {
-        font-size: 5px;
+        font-size: 9px;
+        width: 100%;
+        padding-bottom: 30%; 
+        padding-left: 5%;
+        padding-right: 5%;
     }
+}
+
+
+/* FAQs */
+.faq-title-box {
+    margin-bottom: 1px;
+    height: auto;
+    min-height: 75px;
+    width: 23%;
+    text-align: start;
+    font-weight: 600;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+.accordion {
+    width: 95%;
+    margin-bottom: 5%;
 }
 
 .accordion-button {
@@ -145,25 +206,7 @@ body {
     box-shadow: 0px 0px 0px white
 }
 
-.accordion {
-    width: 95%;
-    margin-bottom: 5%;
-}
-
-.tier-primary-text {
-    font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    .tier-primary-text {
-        font-size: 14px;
-        overflow-wrap: initial;
-    }
-}
-
 #panelsStayOpen-collapseOne p{
     display: list-item;
     margin-left: 3%;
 }
-
-
