@@ -1,24 +1,12 @@
-# README
+# SUBSCRIPTION PLANS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+* Run `rails db:seed` to seed the three subscription plans, and the fake company. The company by default is subscribed to the Free plan.
+* Run `rails server`
 
-Things you may want to cover:
+## Front-End
+* When the Get Started button is clicked, the user should see a notice that the plan has been updated 
 
-* Ruby version
+## Back-End
+* When the Get Started button is clicked, a POST request is made to `Companies#update` which updates the seeded company's subscription plan.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
