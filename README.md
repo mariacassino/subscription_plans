@@ -1,7 +1,7 @@
 # SUBSCRIPTION PLANS
 
 ## Setup
-* Run `rails db:seed` to seed the three subscription plans, and the fake company. The company by default is subscribed to the Free plan.
+* Clone project down and run `rails db:seed` to seed the three subscription plans, and the fake company. The company by default is subscribed to the Free plan.
 * Run `rails server`
 
 ## Front-End
