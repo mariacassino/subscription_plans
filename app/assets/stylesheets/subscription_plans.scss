@@ -10,8 +10,50 @@ body {
 /* TABLE */
 
 .subscription-container {
-    margin-top: 30px;
+    margin-top: 15px;
 }
+
+
+/* "popular" row of columns */
+.popular-row {
+    height: 30px;
+}
+
+.popular-box {
+    margin-right: 0px;
+    margin-left: 4px; 
+    height: inherit;
+    width: 23%;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &.most-popular {
+        background-color: #FFBF00;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .popular-box {
+        margin-right: 0px;
+        margin-left: 4px; 
+        height: inherit;
+        width: 23%;
+        border: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &.most-popular {
+            background-color: #FFBF00;
+            font-weight: 400;
+            font-size: 9px;
+        }
+    }
+}
+
 
 /* tier name boxes */
 .tier-name {
@@ -32,7 +74,8 @@ body {
     };
     
     &.price {
-        font-weight: 600;
+        font-weight: 400;
+        font-family: futura;
     }
 }
 
@@ -44,23 +87,6 @@ body {
     .tier-primary-text {
         font-size: 14px;
         overflow-wrap: initial;
-    }
-}
-
-.popular-box {
-    margin-right: 4px;
-    margin-left: 4px; 
-    height: auto;
-    min-height: 75px;
-    width: 23%;
-    border: 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    &.most-popular {
-        background-color: orange;
-        font-weight: 400;
     }
 }
 
@@ -107,6 +133,7 @@ body {
 
     &.sub-plan-pricing {
         font-size: 25px;
+        font-family: futura;
     }
 
     &.addon-title-box {
@@ -133,11 +160,11 @@ body {
 
 /* business tier column */
 .business {
-    border-left: solid 2px #FFAC1C;
-    border-right: solid 2px #FFAC1C;
+    border-left: solid 2px #FFBF00;
+    border-right: solid 2px #FFBF00;
 
     &.last {
-        border-bottom: solid 2px #FFAC1C;
+        border-bottom: solid 2px #FFBF00;
     }
 }
 
@@ -149,7 +176,7 @@ body {
 }
 
 .subscription-container .button_to input {
-    background-color: blue;
+    background-color: #1F51FF;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -198,6 +225,7 @@ body {
 .accordion-button {
     font-size: 20px;
     font-weight: 600;
+    padding: 3%;
 }
 
 .accordion-button:not(.collapsed) {

@@ -2,8 +2,8 @@
 <%# try col-xs-1 col-sm-3 to move features box above others %>
 
 <div class="container-lg text-center subscription-container">
-    <div class="row">
-        <div class="col-3 features-box sub-plan-pricing"></div>
+    <div class="row popular-row">
+        <div class="col-3 popular-box"></div>
         <div class="col-3 popular-box"></div>
         <div class="col-3 popular-box most-popular">
             <div class="most-pop-box">
@@ -46,7 +46,7 @@
             <div class="tier-primary-text">
                 <%= "Enterprise" %>
                 <br>
-                <span><%= SubscriptionPlan.find_by(name: "enterprise").price %></span>
+                <span class="price"><%= SubscriptionPlan.find_by(name: "enterprise").price %></span>
             </div>
             <br>
             <%= "Monthly (Minimum of 3 months if using (*) features)" %>
